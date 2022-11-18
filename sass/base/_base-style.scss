@@ -1,0 +1,78 @@
+.section {
+	padding: 94px 0;
+}
+
+.icon {
+	fill: currentColor;
+}
+
+body {
+	background-color: var(--colff--white);
+	color: var(--col--black);
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.03em;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.list {
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@media screen and (min-width: 480px) {
+		width: 480px;
+		margin: 15px;
+		flex-wrap: wrap;
+	}
+
+	@media screen and (min-width: 768px) {}
+
+	@media screen and (min-width: 1200px) {}
+
+}
+
+
+.hidden {
+	position: absolute;
+	white-space: nowrap;
+	overflow: hidden;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+}
+
+.link {
+	text-decoration: none;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+
+	color: var(--col--black);
+}

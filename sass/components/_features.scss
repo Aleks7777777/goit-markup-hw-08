@@ -1,0 +1,35 @@
+.features-section {
+	padding-bottom: 0;
+
+	background-color: var(--colff--white);
+
+	&__list {
+		display: flex;
+		gap: 30px;
+	}
+
+	&__title {
+		text-transform: uppercase;
+
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		color: var(--col--lgrey);
+		font-size: 14px;
+		line-height: 1.7;
+	}
+
+	&__container-icon {
+		background-color: #f5f4fa;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+		width: 270px;
+		height: 120px;
+	}
+}
