@@ -1,6 +1,7 @@
 .hero {
 	max-width: 1600px;
 	padding: 200px 0;
+	flex-wrap: wrap;
 	margin-left: auto;
 	margin-right: auto;
 	background-image: linear-gradient(to bottom,
@@ -8,6 +9,27 @@
 			rgba(47, 48, 58, 0.4)),
 		url(../images/backround.jpg);
 	background-size: cover;
+}
+
+.hero {
+	background-image: url(/images/images@/mb_Header\ img.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+
+	@media screen and (min-width: 480px) {
+		background-image: url(/images/images@/mb_Header\ img.jpg);
+	}
+
+	@media screen and (min-width: 768px) {
+		background-image: url(/images/images@/tab_Header\ img.jpg);
+	}
+
+	@media screen and (min-width: 1200px) {
+		background-image: url(/images/images@/des_Header\ Img.jpg);
+	}
+
+	@media (min-device-pixel-ratio: 2) and (min-width: 1200),
+	(min-resolution: 192) {}
 }
 
 .hero-title {
