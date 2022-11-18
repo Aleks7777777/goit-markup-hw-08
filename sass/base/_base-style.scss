@@ -1,5 +1,5 @@
 .section {
-	padding: 94px 0;
+	padding: 60px 0;
 }
 
 .icon {
@@ -35,7 +35,6 @@ button {
 .container {
 	margin-left: auto;
 	margin-right: auto;
-
 	padding-left: 15px;
 	padding-right: 15px;
 
@@ -54,7 +53,6 @@ button {
 	position: absolute;
 	white-space: nowrap;
 	overflow: hidden;
-
 	width: 1px;
 	height: 1px;
 	margin: -1px;
@@ -66,11 +64,9 @@ button {
 
 .link {
 	text-decoration: none;
-
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-
 	color: var(--col--black);
 }
