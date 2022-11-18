@@ -647,6 +647,11 @@ button {
   height: 120px;
 }
 
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
 .work-list {
   display: -webkit-box;
   display: -ms-flexbox;
