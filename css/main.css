@@ -523,11 +523,6 @@ button {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen and (min-width: 480px) {
-  .hero {
-    background-image: url(/images/images@/mb_Header\ img.jpg);
-  }
-}
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(/images/images@/tab_Header\ img.jpg);
@@ -538,6 +533,12 @@ button {
     background-image: url(/images/images@/des_Header\ Img.jpg);
   }
 }
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: url(/images/images@/des_Header\ Img@2x.jpg);
+  }
+}
+
 .hero-title {
   margin-left: auto;
   margin-right: auto;
@@ -620,6 +621,7 @@ button {
 }
 .features-section__title {
   text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -629,6 +631,7 @@ button {
   color: var(--col--lgrey);
   font-size: 14px;
   line-height: 1.7;
+  text-align: center;
 }
 .features-section__container-icon {
   background-color: #f5f4fa;
@@ -693,6 +696,9 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .team-list__team-section {
   padding-top: 30px;
@@ -759,6 +765,9 @@ button {
       flex-wrap: wrap;
   gap: 30px;
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .customers-list__link:hover, .customers-list__link:focus {
   color: var(--col--blue);
@@ -802,8 +811,8 @@ button {
   top: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   border-radius: 4px;
   padding: 40px;
   background-color: var(--colff--white);
@@ -1000,6 +1009,7 @@ button {
   color: var(--col--lgrey);
 }
 .modal-checkbox__linc {
+  display: block;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1012,14 +1022,11 @@ button {
 }
 .modal-checkbox__label {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 8px;
-  margin-left: 15px;
+  display: block;
+  text-align: center;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;

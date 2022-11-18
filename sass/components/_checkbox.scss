@@ -13,6 +13,7 @@
 	}
 
 	&__linc {
+		display: block;
 		font-family: "Roboto", sans-serif;
 		font-style: normal;
 		font-weight: 400;
@@ -26,15 +27,12 @@
 
 	&__label {
 		position: relative;
-		display: flex;
 		justify-content: center;
-		gap: 8px;
-		margin-left: 15px;
-
+		display: block;
+		text-align: center;
 		font-size: 14px;
 		line-height: 24px;
 		letter-spacing: 0.03em;
-
 		color: var(--col--lgrey);
 	}
 
