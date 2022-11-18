@@ -359,9 +359,6 @@ button {
 }
 
 .header-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -378,6 +375,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
 }
 
 .logo {
@@ -617,7 +617,6 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  width: 100%;
 }
 .features-section__title {
   text-transform: uppercase;
@@ -643,7 +642,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
-  width: 270px;
+  width: 100%;
   height: 120px;
 }
 
@@ -1062,6 +1061,14 @@ button {
   gap: 70px;
   padding-top: 60px;
   padding-bottom: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-address__link {
@@ -1135,6 +1142,17 @@ button {
 .footer-form {
   margin-left: auto;
   padding-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .footer-form__join {
   display: -webkit-box;
@@ -1143,6 +1161,9 @@ button {
   gap: 12px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer-form__text {
   font-family: "Roboto", sans-serif;

@@ -8,12 +8,18 @@
 .footer-form {
 	margin-left: auto;
 	padding-top: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 
 
 	&__join {
 		display: flex;
 		gap: 12px;
 		flex-wrap: wrap;
+		justify-content: center;
+
 	}
 
 
