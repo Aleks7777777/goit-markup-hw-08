@@ -1,15 +1,15 @@
 .modal-checkbox {
 
 	&__title {
-		font-family: "Roboto", sans-serif;
+		font-family: 'Roboto';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 14px;
-		line-height: 24px;
+		font-size: 12px;
+		line-height: 1.16;
 		letter-spacing: 0.03em;
-		margin-bottom: 30px;
-
 		color: var(--col--lgrey);
+
+		padding-left: 20px;
 	}
 
 	&__linc {
@@ -36,7 +36,7 @@
 		color: var(--col--lgrey);
 	}
 
-	&__title {
+	&__border {
 		position: absolute;
 		top: 3px;
 		left: 0px;
@@ -45,7 +45,12 @@
 		background-image: url(../images/check_off.svg);
 	}
 
-	.modal-checkbox:checked+&__title {
+	.modal-checkbox:checked+&__border {
 		background-image: url(../images/check_on.svg);
 	}
+}
+
+.modal-checkbox__ .link {
+	text-decoration-skip-ink: none;
+	text-decoration: underline;
 }

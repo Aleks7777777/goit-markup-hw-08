@@ -148,13 +148,14 @@
 					<li class="team-list__item">
 						<picture>
 							<source srcset="./images/images@/mb1_img.jpg 1x, ./images/images@/mb1_img@2x.jpg 2x"
-								media="(max-width:479px)" />
-							<source srcset="./images/images@/tab1_img.jpg 1x, ./images/images@/tab1_img@2x.jpg 2x"
 								media="(max-width:767px)" />
-							<source srcset="./images/images@/des1_img.jpg 1x, ./images/images@/des1_img@2x.jpg 2x"
+							<source srcset="./images/images@/tab1_img.jpg 1x, ./images/images@/tab1_img@2x.jpg 2x"
 								media="(max-width:1199px)" />
+							<source srcset="./images/images@/des1_img.jpg 1x, ./images/images@/des1_img@2x.jpg 2x"
+								media="(min-width:1200px)" />
 
 							<img src="./images/images@/mb1_img.jpg" alt="product_designer" />
+
 						</picture>
 						<div class="team-list__team-section">
 							<h3 class="team-list__title">Ігор Дем'яненко</h3>
@@ -191,11 +192,11 @@
 					<li class="team-list__item">
 						<picture>
 							<source srcset="./images/images@/mb2img.jpg 1x, ./images/images@/mb2_img@2x.jpg 2x"
-								media="(max-width:479px)" />
-							<source srcset="./images/images@/tab2_img.jpg 1x, ./images/images@/tab2_img@2x.jpg 2x"
 								media="(max-width:767px)" />
-							<source srcset="./images/images@/des2_img.jpg 1x, ./images/images@/des2_img@2x.jpg 2x"
+							<source srcset="./images/images@/tab2_img.jpg 1x, ./images/images@/tab2_img@2x.jpg 2x"
 								media="(max-width:1199px)" />
+							<source srcset="./images/images@/des2_img.jpg 1x, ./images/images@/des2_img@2x.jpg 2x"
+								media="(min-width:1200px)" />
 
 							<img src="./images/images@/mb2img.jpg" alt="frontend_developer" />
 						</picture>
@@ -234,11 +235,11 @@
 					<li class="team-list__item">
 						<picture>
 							<source srcset="./images/images@/mb3_img.jpg 1x, ./images/images@/mb3_img@2x.jpg 2x"
-								media="(max-width:479px)" />
-							<source srcset="./images/images@/tab3_img_.jpg 1x, ./images/images@/tab3_img@2x.jpg 2x"
 								media="(max-width:767px)" />
-							<source srcset="./images/images@/des3_img.jpg 1x, ./images/images@/des3_img@2x.jpg 2x"
+							<source srcset="./images/images@/tab3_img_.jpg 1x, ./images/images@/tab3_img@2x.jpg 2x"
 								media="(max-width:1199px)" />
+							<source srcset="./images/images@/des3_img.jpg 1x, ./images/images@/des3_img@2x.jpg 2x"
+								media="(min-width:1200px)" />
 
 							<img src="./images/images@/mb3_img.jpg" alt="marketing" />
 						</picture>
@@ -277,11 +278,11 @@
 					<li class="team-list__item">
 						<picture>
 							<source srcset="./images/images@/mb4_img.jpg 1x, ./images/images@/mb4_img@2x.jpg 2x"
-								media="(max-width:479px)" />
+								media="(max-width: 767px)" />
 							<source srcset="./images/images@/tab4_img.jpg 1x, ./images/images@/tab4_img@2x.jpg 2x"
-								media="(max-width:767px)" />
-							<source srcset="./images/images@/des4_img.jpg 1x, ./images/images@/des4_img@2x.jpg 2x"
 								media="(max-width:1199px)" />
+							<source srcset="./images/images@/des4_img.jpg 1x, ./images/images@/des4_img@2x.jpg 2x"
+								media="(min-width:1200px)" />
 
 							<img src="./images/images@/mb4_img.jpg" alt="ui_designer" />
 						</picture>
@@ -411,10 +412,11 @@
 				</label>
 				<label class="modal-checkbox__label" for="checkbox">
 					<input class="modal-checkbox hidden" type="checkbox" name="checkbox" id="checkbox" />
-					<span class="modal-checkbox__title"></span>
-					Погоджуюся з розсилкою та приймаю
-					<a class="modal-checkbox__linc" href="#" target="_blank" rel="noopener noreferrer">Умови
-						договору</a>
+					<span class="modal-checkbox__border"></span>
+					<span class="modal-checkbox__title">Погоджуюся з розсилкою та приймаю
+						<a class="link" href="#" target="_blank" rel="noopener noreferrer">Умови
+							договору</a></span>
+
 				</label>
 				<div class="modal-send">
 					<button class="modal-send__button" type="submit">Відправити</button>

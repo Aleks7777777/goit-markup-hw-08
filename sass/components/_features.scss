@@ -4,35 +4,53 @@
 	background-color: var(--colff--white);
 
 	&__list {
+		list-style: none;
 		display: flex;
-		flex-wrap: wrap;
 		gap: 30px;
+		flex-wrap: wrap;
 	}
 
 	&__title {
-		text-transform: uppercase;
-		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		font-style: normal;
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 1.14;
-		margin-bottom: 10px;
+		text-align: center;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: var(--col--black);
 	}
 
 	&__text {
-		color: var(--col--lgrey);
+		font-family: 'Roboto', sans-serif;
+		font-style: normal;
 		font-size: 14px;
-		line-height: 1.7;
-		text-align: center;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		color: var(--col--lgrey);
 	}
 
 	&__container-icon {
 		background-color: #f5f4fa;
-		display: flex;
 		justify-content: center;
+		display: flex;
 		align-items: center;
 		margin-bottom: 30px;
 		width: 100%;
 		height: 120px;
+		padding: 25px, 0;
+	}
+
+
+	&__item {
+		@media screen and (min-width: 768px) {
+			max-width: 354px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			max-width: 270px;
+		}
 
 	}
 }

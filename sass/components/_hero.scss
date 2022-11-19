@@ -12,22 +12,35 @@
 }
 
 .hero {
-	background-image: url(/images/images@/mb_Header\ img.jpg);
+	background-image: url(../images/images@/mb_Header\ img.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 
-	@media screen and (min-width: 768px) {
-		background-image: url(/images/images@/tab_Header\ img.jpg);
+
+	@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+	(min-resolution: 192dpi) and (max-width: 767px),
+	(min-resolution: 2dppx) and (max-width: 767px) {
+		background-image: url(../images/images@/mb_Header\ img@2x.jpg);
 	}
 
-	@media screen and (min-width: 1200px) {
-		background-image: url(/images/images@/des_Header\ Img.jpg);
+	@media (min-device-pixel-ratio: 2) and (max-width: 1199px),
+	(min-resolution: 192dpi) and (max-width: 1199px),
+	(min-resolution: 2dppx) and (max-width: 1199px) {
+		background-image: url(../images/images@/tab_Header\ img@2x.jpg);
+	}
+
+	@media screen and (max-width: 1199px) {
+		background-image: url(../images/images@/tab_Header\ img.jpg);
 	}
 
 	@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
 	(min-resolution: 192dpi) and (min-width: 1200px),
 	(min-resolution: 2dppx) and (min-width: 1200px) {
-		background-image: url(/images/images@/des_Header\ Img@2x.jpg);
+		background-image: url(../images/images@/des_Header\ Img@2x.jpg);
+	}
+
+	@media screen and (min-width: 1200px) {
+		background-image: url(../images/images@/des_Header\ Img.jpg);
 	}
 }
 

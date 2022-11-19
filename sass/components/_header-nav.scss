@@ -1,16 +1,15 @@
 .main-nav {
 	display: inline-block;
 	align-items: center;
-}
-
-
-
-.main-nav {
 
 	&__list {
 		display: flex;
 		align-items: center;
 		gap: 50px;
+
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
 	}
 
 
