@@ -525,44 +525,63 @@ button {
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: url(../images/images@/mb_Header\ img@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/images@/mb_Header\ img@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images@/mb_Header\ img@2x.jpg);
+    padding: 118px 0;
   }
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 1199px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 1199px), (min-resolution: 192dpi) and (max-width: 1199px), (min-resolution: 2dppx) and (max-width: 1199px) {
   .hero {
-    background-image: url(../images/images@/tab_Header\ img@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/images@/tab_Header\ img@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images@/tab_Header\ img@2x.jpg);
   }
 }
 @media screen and (max-width: 1199px) {
   .hero {
-    background-image: url(../images/images@/tab_Header\ img.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/images@/tab_Header\ img.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images@/tab_Header\ img.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/images@/des_Header\ Img@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/images@/des_Header\ Img@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images@/des_Header\ Img@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/images@/des_Header\ Img.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/images@/des_Header\ Img.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images@/des_Header\ Img.jpg);
   }
 }
 
 .hero-title {
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
   text-align: center;
-  max-width: 670px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 30px;
   width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--colff--white);
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.03em;
+    max-width: 670px;
+  }
 }
 
 .hero-button {
@@ -832,6 +851,18 @@ button {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .section-title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--col--black);
+  }
+}
 .modal {
   position: fixed;
   z-index: 777;
@@ -949,6 +980,7 @@ button {
 }
 
 .form-box__icon {
+  display: block;
   position: relative;
 }
 
@@ -1170,14 +1202,6 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.send-mail {
-  width: 100%;
-}
-
-.footer-form {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
 .footer-form__join {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1209,7 +1233,7 @@ button {
   text-align: center;
 }
 .footer-form__mail {
-  width: 100%;
+  width: 450;
   height: 50px;
   padding: 15px 16px;
   outline: transparent;
@@ -1223,6 +1247,11 @@ button {
 @media screen and (min-width: 767px) {
   .footer-form__mail {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__mail {
+    width: 358px;
   }
 }
 

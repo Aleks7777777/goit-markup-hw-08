@@ -1,9 +1,4 @@
-.send-mail {
-	width: 100%;
-}
-
 .footer-form {
-	flex-wrap: wrap;
 
 
 	&__join {
@@ -32,7 +27,7 @@
 
 	&__mail {
 
-		width: 100%;
+		width: 450;
 		height: 50px;
 		padding: 15px 16px;
 		outline: transparent;
@@ -44,7 +39,12 @@
 
 		@media screen and (min-width: 767px) {
 			width: 450px;
-
 		}
+
+		@media screen and (min-width: 1200px) {
+			width: 358px;
+		}
+
 	}
+
 }
