@@ -25,7 +25,7 @@
 .mobile-nav {
 
 	&__list {
-		color: var(--basic-color);
+		color: var(--col--black);
 		font-weight: 500;
 		font-size: 40px;
 		line-height: 1.175;
@@ -41,7 +41,7 @@
 	}
 
 	&__link--current {
-		color: var(--accent-color);
+		color: var(--col--blue);
 	}
 }
 
@@ -61,7 +61,7 @@
 		display: flex;
 
 
-		color: var(--accent-color);
+		color: var(--col--blue);
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 1.22;
@@ -70,7 +70,7 @@
 	}
 
 	&__link {
-		color: var(--accent-color);
+		color: var(--col--blue);
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 1.22;
@@ -87,7 +87,7 @@
 }
 
 .mobile-tel__link {
-	color: var(--accent-color);
+	color: var(--col--blue);
 
 	font-weight: 500;
 	font-size: 34px;
@@ -98,7 +98,7 @@
 }
 
 .mobile-mail__link {
-	color: var(--title-text-color);
+	color: var(--col--lgrey);
 
 	font-weight: 500;
 	font-size: 24px;
