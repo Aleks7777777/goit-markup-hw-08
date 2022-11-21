@@ -380,6 +380,12 @@ button {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1199px) {
+  .container .main {
+    display: contents;
+  }
+}
+
 .logo {
   text-decoration: none;
   display: -webkit-box;
