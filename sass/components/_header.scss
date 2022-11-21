@@ -1,12 +1,15 @@
 .header-page {
-	align-items: center;
-	justify-content: center;
+	display: contents;
 	border-bottom: 1px solid #ececec;
 }
 
-.header-page .container {
+.header-container {
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
-	width: 100%;
+	justify-content: space-between
+}
+
+.container .main {
+
+	@media screen and (min-width: 1200px) {}
 }

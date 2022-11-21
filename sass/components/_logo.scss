@@ -10,12 +10,23 @@
 	line-height: 1.1923;
 	letter-spacing: 0.03em;
 	color: var(--col--blue);
+
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 20px;
+		font-weight: 700;
+		font-size: 26px;
+	}
 }
 
 .header__logo {
 	text-decoration: none;
-	margin-right: 93px;
 	color: #000000;
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 93px;
+
+	}
 }
 
 .footer__logo {

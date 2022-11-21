@@ -2,6 +2,77 @@
 	display: inline-block;
 	align-items: center;
 
+	@media screen and (min-width: 1200px) {
+
+		&__list {
+			display: flex;
+			align-items: center;
+			gap: 50px;
+		}
+
+
+		&__item {
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 16px;
+			letter-spacing: 0.02em;
+		}
+
+
+
+		&__item {
+			position: relative;
+			padding-top: 32px;
+			padding-bottom: 32px;
+		}
+
+		&__link::after {
+			content: "";
+			position: absolute;
+			display: block;
+
+			border-radius: 2px;
+			width: 0;
+			left: 0;
+			height: 4px;
+			bottom: -1%;
+
+			background-color: var(--col--blue);
+		}
+
+		&__link:focus::after,
+		&__link:hover::after,
+		&__link--current:after {
+			width: 100%;
+		}
+
+		&__link:hover,
+		&__link:focus {
+			color: var(--col--blue);
+		}
+
+		&__link {
+			transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
+
+		&__link:after {
+			transition: 700ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
+
+		&__link--current {
+			color: var(--col--blue);
+			text-decoration: none;
+		}
+	}
+
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	&__list {
 		display: flex;
 		align-items: center;

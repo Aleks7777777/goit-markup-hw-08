@@ -14,8 +14,7 @@
 
 	display: flex;
 	flex-direction: column;
-
-
+	justify-content: space-between;
 }
 
 .menu-container.is-open {
@@ -23,7 +22,7 @@
 
 }
 
-/*.-nav {
+.mobile-nav {
 
 	&__list {
 		color: var(--basic-color);
@@ -33,7 +32,7 @@
 		letter-spacing: 0.02em;
 
 		display: block;
-		margin-bottom: 300px;
+
 
 	}
 
@@ -106,4 +105,4 @@
 	line-height: 1.1666;
 	letter-spacing: 0.02em;
 
-}*/
+}
