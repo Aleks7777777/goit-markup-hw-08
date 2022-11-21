@@ -9,7 +9,7 @@
 	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
-	font-family: "Raleway";
+
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.1428;
@@ -27,6 +27,12 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+
+	@media screen and (min-width: 1200px) {
+		gap: 0;
+		justify-content: flex-start;
+	}
+
 }
 
 

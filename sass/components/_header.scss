@@ -1,17 +1,25 @@
 .header-page {
 	display: contents;
 	border-bottom: 1px solid #ececec;
+
+
 }
 
 .header-container {
 	display: flex;
 	align-items: center;
-	justify-content: space-between
+	justify-content: space-between;
+
+	@media screen and (min-width:768px) {
+		justify-content: space-around;
+
+	}
+
 }
 
-.container .main {
+.main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-	@media screen and (max-width: 1199px) {
-		display: contents;
-	}
 }
