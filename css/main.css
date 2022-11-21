@@ -437,6 +437,33 @@ button {
   }
 }
 
+.icon-button-burger {
+  color: var(--col--black);
+}
+
+.close-button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  top: 8px;
+  right: 8px;
+}
+.close-button:hover, .close-button:focus {
+  color: var(--col--blue);
+}
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -874,10 +901,19 @@ button {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--col--black);
+}
+@media screen and (max-width: 1199px) {
+  .features-section__title {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .features-section__title {
+    text-align: center;
+  }
 }
 .features-section__text {
   font-family: "Roboto", sans-serif;
