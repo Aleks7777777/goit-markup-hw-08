@@ -502,7 +502,7 @@ button {
   letter-spacing: 0.02em;
 }
 .mobile-social__link {
-  color: var(--col--blue);
+  color: var(--col--black);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -552,6 +552,7 @@ button {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    color: var(--col--black);
   }
   .main-nav__item {
     position: relative;
