@@ -1,26 +1,33 @@
 .footer-form__join .send-mail {
-	max-width: 450px;
+	max-width: 358px;
 	width: 100%;
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+	}
 }
 
 .footer-form {
-	max-width: 450px;
+	max-width: 570px;
 	width: 100%;
+	margin-left: auto;
+
+	@media screen and (max-width: 1199px) {
+		text-align: center;
+		flex-direction: column;
+		gap: 20px;
+	}
 
 	&__join {
 		display: flex;
-		gap: 20px;
+		gap: 12px;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		flex-direction: column;
-
-
 	}
 
 	&__text {
-		font-family: "Roboto", sans-serif;
-		font-style: normal;
+		text-align: initial;
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 1.1428;
@@ -28,7 +35,6 @@
 		text-transform: uppercase;
 		margin-bottom: 20px;
 		color: var(--colff--white);
-		text-align: center;
 	}
 
 	&__mail {
