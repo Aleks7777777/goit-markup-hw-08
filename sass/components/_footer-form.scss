@@ -1,21 +1,37 @@
 .footer-form__join .send-mail {
-	max-width: 358px;
+	max-width: 350px;
 	width: 100%;
 
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+
+	@media screen and (min-wwdth: 768px) and (max-width: 1199px) {
+		max-width: 450px;
 		display: flex;
+		row-gap: 20px;
 	}
+
 }
+
 
 .footer-form {
 	max-width: 570px;
 	width: 100%;
-	margin-left: auto;
 
 	@media screen and (max-width: 1199px) {
 		text-align: center;
 		flex-direction: column;
 		gap: 20px;
+	}
+
+	@media screen and(min-width: 1200px) {
+		padding-top: 12px;
+		padding-bottom: 29px;
+	}
+
+	@media screen and (min-wwdth: 768px) and (max-width: 1199px) {
+		align-items: center;
+		padding-top: 0;
+		margin-top: 60px;
 	}
 
 	&__join {
@@ -24,6 +40,10 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+
+		@media screen and (min-width: 1200px) {
+			display: -webkit-box;
+		}
 	}
 
 	&__text {
